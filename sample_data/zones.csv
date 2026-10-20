@@ -1,0 +1,9 @@
+zone_id,name,level,subnet,sl_target,owner
+ENT,Enterprise IT,4,10.10.0.0/16,1,Laura Gómez
+DMZ,IT/OT DMZ,DMZ,10.50.0.0/24,3,Diego Martín
+OPS,Site operations,3,10.60.0.0/24,2,Diego Martín
+SUP1,Line 1 supervisory,2,10.70.1.0/24,2,Marta Ruiz
+CTL1,Line 1 control,1,10.80.1.0/24,3,Marta Ruiz
+SUP2,Line 2 supervisory,2,10.70.2.0/24,2,Pablo Ortega
+CTL2,Line 2 control,1,10.80.2.0/24,3,Pablo Ortega
+SIS,Safety systems,1,10.90.0.0/24,3,

@@ -1,0 +1,26 @@
+asset_id,name,type,zone,ip,os,criticality,owner
+A01,ws-fin-021,workstation,ENT,10.10.4.21,Windows 11,low,Laura Gómez
+A02,it-admin-05,workstation,ENT,10.10.3.5,Windows 11,medium,Laura Gómez
+A03,erp-app-01,server,ENT,10.10.8.10,Windows Server 2022,high,Laura Gómez
+A04,jump-01,jump_host,DMZ,10.50.0.10,Windows Server 2022,high,Diego Martín
+A05,hist-mirror,historian,DMZ,10.50.0.20,Windows Server 2022,medium,Diego Martín
+A06,patch-01,server,DMZ,10.50.0.30,Windows Server 2022,medium,Diego Martín
+A07,sw-core-ot,switch,OPS,10.60.0.2,IOS 15.2,high,Diego Martín
+A08,dc-ot-01,server,OPS,10.60.0.5,Windows Server 2019,high,Diego Martín
+A09,hist-01,historian,OPS,10.60.0.10,Windows Server 2019,high,Diego Martín
+A10,mes-01,server,OPS,10.60.0.20,Windows Server 2019,high,Diego Martín
+A11,ews-01,engineering_ws,OPS,10.60.0.30,Windows 10 LTSC,high,Diego Martín
+A12,scada-l1,scada,SUP1,10.70.1.10,Windows Server 2019,high,Marta Ruiz
+A13,hmi-l1-a,hmi,SUP1,10.70.1.21,Windows 10 IoT,high,Marta Ruiz
+A14,hmi-l1-b,hmi,SUP1,10.70.1.22,Windows 7 Embedded,high,Marta Ruiz
+A15,plc-l1-filler,plc,CTL1,10.80.1.11,Firmware 4.2,high,Marta Ruiz
+A16,plc-l1-capper,plc,CTL1,10.80.1.12,Firmware 4.2,high,Marta Ruiz
+A17,rio-l1,remote_io,CTL1,10.80.1.40,Firmware 2.1,medium,Marta Ruiz
+A18,hmi-l2-a,hmi,SUP2,10.70.2.21,Windows 10 IoT,high,Pablo Ortega
+A19,ews-l2,engineering_ws,SUP2,10.70.2.30,Windows 7,medium,Pablo Ortega
+A20,plc-l2-labeller,plc,CTL2,10.80.2.11,Firmware 3.9,high,Pablo Ortega
+A21,plc-l2-palletiser,plc,CTL2,10.80.2.12,Firmware 3.9,high,Pablo Ortega
+A22,plc-l2-wrapper,plc,CTL2,10.80.3.13,Firmware 3.9,medium,Pablo Ortega
+A23,sis-l2,safety_plc,CTL2,10.80.2.50,Firmware 1.8,high,Pablo Ortega
+A24,sis-l1,safety_plc,SIS,10.90.0.11,Firmware 1.8,high,
+A25,cam-qc-01,camera,,10.70.1.60,Firmware 5.0,low,Marta Ruiz

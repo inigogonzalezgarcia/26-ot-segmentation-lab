@@ -1,0 +1,17 @@
+rule_id,src_zone,dst_zone,src,dst,service,purpose,approved_by,expires
+R01,ENT,DMZ,it-admin-05,jump-01,tcp/3389,IT admins to the jump host,Diego Martín,
+R02,ENT,DMZ,*,hist-mirror,tcp/443,Production reports from the historian mirror,Diego Martín,
+R03,OPS,DMZ,hist-01,hist-mirror,tcp/5450,Historian replication,Diego Martín,
+R04,DMZ,OPS,jump-01,ews-01,tcp/3389,Engineering sessions from the jump host,Diego Martín,
+R05,OPS,DMZ,*,patch-01,tcp/8443,Patches and antivirus updates,Diego Martín,
+R06,SUP1,OPS,scada-l1,hist-01,tcp/5450,Line 1 data to the historian,Marta Ruiz,
+R07,SUP2,OPS,hmi-l2-a,hist-01,tcp/5450,Line 2 data to the historian,Pablo Ortega,
+R08,OPS,CTL1,ews-01,*,tcp/102,PLC programming for line 1,Marta Ruiz,
+R09,SUP1,CTL1,scada-l1,*,tcp/502,SCADA polling line 1,Marta Ruiz,
+R10,SUP2,CTL2,hmi-l2-a,*,tcp/44818,HMI to line 2 controllers,Pablo Ortega,
+R11,ENT,OPS,*,*,any,Legacy rule from commissioning,,
+R12,Internet,DMZ,*,jump-01,tcp/443,Vendor remote access portal,Diego Martín,
+R13,DMZ,SUP1,jump-01,*,tcp/5900,Vendor HMI upgrade (temporary),Marta Ruiz,2026-09-30
+R14,DMZ,OPS,jump-01,sw-core-ot,tcp/23,Switch management,Diego Martín,
+R15,SUP1,OPS,*,*,udp/514,Syslog from line 1,Marta Ruiz,
+R16,DMZ,OPS,jump-01,mes-01,tcp/3389,MES upgrade by the vendor (temporary),Diego Martín,2026-10-28
