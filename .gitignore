@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+.venv/
+
+# Local data and generated output (your real inventory, rules and flow exports stay out of Git;
+# the fictional files in sample_data/ are committed on purpose)
+/output/
+/assets*.csv
+/zones*.csv
+/conduits*.csv
+/flows*.csv
+/data/
+
+# Secrets
+.env
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
